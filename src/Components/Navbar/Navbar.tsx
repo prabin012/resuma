@@ -1,4 +1,20 @@
 const Navbar = () => {
+  const scrollToElement = (href: string) => {
+    console.log(href);
+    const element = document.querySelector(`#${href}`);
+    console.log(element);
+    if (element) {
+      const offset = (element as HTMLElement).offsetTop - 130;
+      window.scrollTo({
+        top: offset,
+        behavior: "smooth",
+      });
+    }
+  };
+  const handleClick = (item: string) => {
+    console.log(item);
+    scrollToElement(item);
+  };
   return (
     <div className="w-screen justify-center flex items-center  ">
       <header className="bg-[#1f1f28] border border-green-900 text-gray-300  rounded-md  w-7xl z-50 shadow-md">
@@ -29,8 +45,11 @@ const Navbar = () => {
             ].map((item) => (
               <a
                 key={item}
-                href={`#${item.toLowerCase().replace(/\s/g, "")}`}
+                // href={`#${item.toLowerCase().replace(/\s/g, "")}`}
                 className="hover:text-white transition duration-200"
+                onClick={() =>
+                  handleClick(item.toLowerCase().replace(/\s/g, ""))
+                }
               >
                 {item}
               </a>
