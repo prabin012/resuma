@@ -7,7 +7,6 @@ import TrustedCompanies from "../Hero/Testmonial";
 import CustomSolutions from "../Hero/Solutions";
 import Experience from "../Hero/Experiance";
 import EducationResearch from "../Hero/Educations";
-import RecentWorks from "../Hero/Work";
 import MySkills from "../Hero/Skills";
 import LetsConnect from "../Hero/Connect";
 import Footer from "../Footer/Footer";
