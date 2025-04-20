@@ -1,9 +1,13 @@
 const MySkills = () => {
   const skillCategories = [
-    { category: "Front-End", skills: "HTML, CSS, JavaScript, React, Angular" },
-    { category: "Back-End", skills: "Node.js, Express, Python, Django" },
-    { category: "Databases", skills: "MySQL, PostgreSQL, MongoDB" },
-    { category: "Tools & Platforms", skills: "Git, Docker, AWS, Heroku" },
+    {
+      category: "Front-End",
+      skills:
+        "HTML, CSS, JavaScript, React, Tailwind, Apollo client, TypesSript, Redux",
+    },
+    { category: "Back-End", skills: "Node.js, Express, GraphQL" },
+    { category: "Databases", skills: "MySQL, MongoDB" },
+    { category: "Tools & Platforms", skills: "Git, Jira" },
     {
       category: "Others",
       skills: "RESTful APIs, GraphQL, Agile Methodologies",

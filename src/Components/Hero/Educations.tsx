@@ -2,44 +2,33 @@ const EducationResearch = () => {
   const education = [
     {
       years: "2020-2024",
-      title: "MIT",
+      title: "Jain Deemed to-be University Bengaluru, Indai",
       description: "Bachelor's Degree in Computer Science",
     },
     {
-      years: "2018-2019",
-      title: "Harvard University",
-      description: "Certification in React and Redux, Node.js Developer Course",
+      years: "2017-2020",
+      title: "Nasa National Secondary School Kathmandu, Nepal",
+      description: "Computer Science (PCM) +2",
     },
     {
-      years: "2015-2016",
-      title: "Stanford University",
-      description: "Certification in Full Stack Web Development",
-    },
-    {
-      years: "2013-2015",
-      title: "University of Washington",
-      description: "Certification in React and Redux, Node.js Developer Course",
+      years: "2017",
+      title: "Shree Ram Secondary School Matihani, Mohattori",
+      description: "10",
     },
   ];
 
   const research = [
     {
       years: "2023-2024",
-      title: "Advanced Data Analytics with Big Data Tools",
+      title: "Online Voting System Using Blockchain Technology",
       description:
-        "Utilized big data tools for advanced analytics and insights.",
+        "Pioneering research leveraging blockchain technology to revolutionize digital voting systems, ensuring unprecedented security and transparency through decentralized architecture",
     },
     {
-      years: "2021-2013",
-      title: "Cloud-Native Application Architectures",
+      years: "2022-2013",
+      title: "Shipment tracking system using blockchain technology ",
       description:
         "Studied best practices for designing cloud-native applications.",
-    },
-    {
-      years: "2019-2020",
-      title: "AI-Driven User Experience Personalization",
-      description:
-        "Leveraged AI to personalize user experiences based on behavior.",
     },
   ];
 
