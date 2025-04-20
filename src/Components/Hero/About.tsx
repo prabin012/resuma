@@ -28,11 +28,13 @@ const HeroSection = () => {
               <span className="text-lime-500">_</span>
             </h1>
             <p className="mb-6 text-gray-600 dark:text-gray-300">
-              With expertise in cutting-edge technologies such as{" "}
+              With expertise in cutting-edge technologies such as
               <span className="font-medium text-black dark:text-white">
-                NodeJS, React, Javascript, Typescript and mongoDB...
-              </span>
-              I deliver web solutions that are both innovative and robust.
+                Full-stack developer experienced in Node.js, React, JavaScript,
+                TypeScript, and MongoDB, building scalable MERN apps with clean
+                UI, API integration, and database management.
+              </span>{" "}
+              <br />I deliver web solutions that are both innovative and robust.
             </p>
             <div className="flex items-end">
               <div className="col-span-1 w-2/4 flex">
