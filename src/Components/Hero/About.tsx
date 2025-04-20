@@ -30,7 +30,7 @@ const HeroSection = () => {
             <p className="mb-6 text-gray-600 dark:text-gray-300">
               With expertise in cutting-edge technologies such as{" "}
               <span className="font-medium text-black dark:text-white">
-                NodeJS, React, Angular, and Laravel...
+                NodeJS, React, Javascript, Typescript and mongoDB...
               </span>
               I deliver web solutions that are both innovative and robust.
             </p>
