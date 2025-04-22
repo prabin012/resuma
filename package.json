@@ -3,7 +3,6 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://prabin012.github.io/resuma",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
@@ -12,6 +11,7 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
   },
+  "homepage": "https://prabin012.github.io/resuma",
   "dependencies": {
     "@tailwindcss/vite": "^4.1.4",
     "framer-motion": "^12.7.4",
