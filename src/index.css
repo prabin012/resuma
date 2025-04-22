@@ -2,3 +2,134 @@
 @import "swiper/css";
 @import "swiper/css/navigation";
 @import "swiper/css/pagination";
+
+.stats-bg {
+  background-color: #1f1f28;
+  background-image: linear-gradient(
+      to right,
+      rgba(255, 255, 255, 0.05) 1px,
+      transparent 1px
+    ),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+  background-size: 20px 20px;
+  /* border: 1px solid rgba(255, 255, 255, 0.08); */
+  border-radius: 0.5rem;
+}
+.marquee {
+  display: flex;
+  animation: scroll-left 10s linear infinite;
+}
+.bodyImage {
+  background-image: url("../../public/images/bg-dark.png");
+  background-repeat: no-repeat;
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0%);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+.marquee {
+  display: flex;
+  animation: scroll-left 10s linear infinite;
+}
+.bodyImage {
+  background-image: url("../../public/images/bg-dark.png");
+  background-repeat: no-repeat;
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0%);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* Add rotation animation */
+.rotate-middle-circle {
+  animation: rotateCircle 5s linear infinite;
+}
+
+/* Keyframes for continuous rotation */
+@keyframes rotateCircle {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Optional: Add transition for smooth scaling or other transformations if needed */
+.rotate-middle-circle {
+  transition: transform 1s ease;
+}
+.rotate-middle-circle-right {
+  animation: rotateCircleRight 2s linear infinite;
+}
+
+/* Keyframes for continuous rotation */
+@keyframes rotateCircleRight {
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+/* Optional: Add transition for smooth scaling or other transformations if needed */
+.rotate-middle-circle-right {
+  transition: transform 1s ease;
+}
+
+.marquee2 {
+  display: flex;
+  animation: scroll-left 20s linear infinite;
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0%);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
+.marquee-right {
+  display: flex;
+  animation: scroll-right-2 20s linear infinite;
+}
+
+@keyframes scroll-right-2 {
+  0% {
+    transform: translateX(-50%);
+  }
+
+  100% {
+    transform: translateX(0%);
+  }
+}
+.marquee-1f {
+  width: 20%;
+  display: flex;
+  animation: scroll-right 10s linear infinite;
+}
+
+@keyframes scroll-right {
+  0% {
+    transform: translateX(-100%);
+  }
+
+  100% {
+    transform: translateX(100%);
+  }
+}
