@@ -233,8 +233,10 @@ const MySkills = () => {
         </div>
         <div className="flex-1 flex justify-end absolute -right-8 -top-8">
           <div className="p-10 rounded-full border border-green-500">
-            <div className="p-7 rounded-full border border-green-500">
-              <div className="p-5 rounded-full border border-green-500">
+            <div className="p-7 rounded-full border border-green-500 rotate-middle-circle">
+              <p className="absolute border p-1 top-0 rounded-full bg-green-900"></p>
+              <div className="p-5 relative rounded-full border border-green-500 rotate-middle-circle-right">
+                <p className="absolute border -top-1 p-1 rounded-full bg-green-900"></p>
                 <div className="p-2 rounded-full border border-green-500"></div>
               </div>
             </div>

@@ -1,11 +1,32 @@
 const TrustedCompanies = () => {
   const journalEntries = [
-    { date: "15 Jul.", title: "Muzzilla-streaming-API-services-for-Python" },
-    { date: "30 Jun.", title: "ChatHub-chat-application-VueJs-Mongobd" },
-    { date: "26 May", title: "DineEasy-coffee-tea-reservation-system" },
-    { date: "17 Apr.", title: "FinanceBuddy-Personal-finance-tracker" },
-    { date: "05 Mar.", title: "TuneStream-Music-streaming-service-API" },
+    {
+      date: "April 2025",
+      title:
+        "Refactored reusable components and improved performance in Ghum Nepal project",
+    },
+    {
+      date: "March 2025",
+      title:
+        "Integrated host insight dashboard with date-based filtering and optimized mobile views",
+    },
+    {
+      date: "February 2025",
+      title:
+        "Fixed booking price mismatch bug and improved image upload in property listing",
+    },
+    {
+      date: "January 2025",
+      title:
+        "Worked on dynamic document verification system and added edit/delete flow before submission",
+    },
+    {
+      date: "December 2024",
+      title:
+        "Developed room finder architecture with dynamic search and location-based filtering",
+    },
   ];
+
   return (
     <div className="w-screen flex justify-center mt-10">
       <div className=" w-7xl   text-white flex">
@@ -15,173 +36,90 @@ const TrustedCompanies = () => {
               <i className="ri-circle-fill text-[6px]"></i> Cooperation
             </h2>
             <h1 className="text-4xl font-bold">
-              More than <span className="text-green-500">+168</span> companies
-              trusted worldwide
+              Earned the trust of{" "}
+              <span className="text-green-500">4+ clients</span> in just two
+              year
             </h1>
+
             <hr className="border-gray-600 w-20 mt-4" />
           </div>
 
-          <div className="border overflow-hidden gap-4 border-gray-600 m-20 p-5">
-            <div className="marquee2">
-              <div className="flex gap-4 whitespace-nowrap">
-                <img
-                  src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg"
-                  alt="NodeJS"
-                  className="w-40 h-10 border border-gray-700 p-2 rounded-md"
-                />
-                <img
-                  src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
-                  alt="TailwindCSS"
-                  className="w-40 h-10 border border-gray-700 p-2 rounded-md"
-                />
-                <img
-                  src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Nextjs-logo.svg"
-                  alt="Next.js"
-                  className="w-40 h-10 border border-gray-700 p-2 rounded-md"
-                />
-                <img
-                  src="https://upload.wikimedia.org/wikipedia/commons/3/37/Firebase_Logo.svg"
-                  alt="Firebase"
-                  className="w-40 h-10 border border-gray-700 p-2 rounded-md"
-                />
-                <img
-                  src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
-                  alt="React"
-                  className="w-40 h-10 border border-gray-700 p-2 rounded-md"
-                />
+          <div className="border w-3xl  overflow-hidden gap-4 rounded-md border-gray-600 m-20 p-5">
+            <div className="marquee2 w-3xl">
+              <div className="flex  gap-4 whitespace-nowrap">
+                <span className="border border-gray-700 px-2 flex justify-center items-center rounded-md">
+                  React.js
+                </span>
+                <span className="border border-gray-700 px-2 flex justify-center items-center rounded-md">
+                  Next.js
+                </span>
+                <span className="border border-gray-700 px-2 flex justify-center items-center rounded-md">
+                  Tailwind CSS
+                </span>
+                <span className="border border-gray-700 px-2 flex justify-center items-center rounded-md">
+                  TypeScript
+                </span>
+                <span className="border border-gray-700 px-2 flex justify-center items-center rounded-md">
+                  Responsive Design
+                </span>
+                <span className="border border-gray-700 px-2 flex justify-center items-center rounded-md">
+                  UI/UX Focused
+                </span>
+
+                <span className="border border-gray-700 px-2 flex justify-center items-center rounded-md">
+                  Next.js
+                </span>
+                <span className="border border-gray-700 px-2 flex justify-center items-center rounded-md">
+                  Tailwind CSS
+                </span>
+                <span className="border border-gray-700 px-2 flex justify-center items-center rounded-md">
+                  TypeScript
+                </span>
+                <span className="border border-gray-700 px-2 flex justify-center items-center rounded-md">
+                  Responsive Design
+                </span>
+                <span className="border border-gray-700 px-2 flex justify-center items-center rounded-md">
+                  UI/UX Focused
+                </span>
 
                 {/* Repeat for smooth loop */}
-                <img
-                  src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg"
-                  alt="NodeJS"
-                  className="w-40 h-10 border border-gray-700 p-2 rounded-md"
-                />
-                <img
-                  src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
-                  alt="TailwindCSS"
-                  className="w-40 h-10 border border-gray-700 p-2 rounded-md"
-                />
-                <img
-                  src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Nextjs-logo.svg"
-                  alt="Next.js"
-                  className="w-40 h-10 border border-gray-700 p-2 rounded-md"
-                />
-                <img
-                  src="https://upload.wikimedia.org/wikipedia/commons/3/37/Firebase_Logo.svg"
-                  alt="Firebase"
-                  className="w-40 h-10 border border-gray-700 p-2 rounded-md"
-                />
-                <img
-                  src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
-                  alt="React"
-                  className="w-40 h-10 border border-gray-700 p-2 rounded-md"
-                />
-                <img
-                  src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg"
-                  alt="NodeJS"
-                  className="w-40 h-10 border border-gray-700 p-2 rounded-md"
-                />
-                <img
-                  src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
-                  alt="TailwindCSS"
-                  className="w-40 h-10 border border-gray-700 p-2 rounded-md"
-                />
-                <img
-                  src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Nextjs-logo.svg"
-                  alt="Next.js"
-                  className="w-40 h-10 border border-gray-700 p-2 rounded-md"
-                />
-                <img
-                  src="https://upload.wikimedia.org/wikipedia/commons/3/37/Firebase_Logo.svg"
-                  alt="Firebase"
-                  className="w-40 h-10 border border-gray-700 p-2 rounded-md"
-                />
-                <img
-                  src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
-                  alt="React"
-                  className="w-40 h-10 border border-gray-700 p-2 rounded-md"
-                />
               </div>
             </div>
-            <div className="marquee-right mt-5">
-              <div className="flex gap-4 whitespace-nowrap">
-                <img
-                  src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg"
-                  alt="NodeJS"
-                  className="w-40 h-10 border border-gray-700 p-2 rounded-md"
-                />
-                <img
-                  src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
-                  alt="TailwindCSS"
-                  className="w-40 h-10 border border-gray-700 p-2 rounded-md"
-                />
-                <img
-                  src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Nextjs-logo.svg"
-                  alt="Next.js"
-                  className="w-40 h-10 border border-gray-700 p-2 rounded-md"
-                />
-                <img
-                  src="https://upload.wikimedia.org/wikipedia/commons/3/37/Firebase_Logo.svg"
-                  alt="Firebase"
-                  className="w-40 h-10 border border-gray-700 p-2 rounded-md"
-                />
-                <img
-                  src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
-                  alt="React"
-                  className="w-40 h-10 border border-gray-700 p-2 rounded-md"
-                />
-
-                {/* Repeat for smooth loop */}
-                <img
-                  src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg"
-                  alt="NodeJS"
-                  className="w-40 h-10 border border-gray-700 p-2 rounded-md"
-                />
-                <img
-                  src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
-                  alt="TailwindCSS"
-                  className="w-40 h-10 border border-gray-700 p-2 rounded-md"
-                />
-                <img
-                  src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Nextjs-logo.svg"
-                  alt="Next.js"
-                  className="w-40 h-10 border border-gray-700 p-2 rounded-md"
-                />
-                <img
-                  src="https://upload.wikimedia.org/wikipedia/commons/3/37/Firebase_Logo.svg"
-                  alt="Firebase"
-                  className="w-40 h-10 border border-gray-700 p-2 rounded-md"
-                />
-                <img
-                  src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
-                  alt="React"
-                  className="w-40 h-10 border border-gray-700 p-2 rounded-md"
-                />
-                <img
-                  src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg"
-                  alt="NodeJS"
-                  className="w-40 h-10 border border-gray-700 p-2 rounded-md"
-                />
-                <img
-                  src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
-                  alt="TailwindCSS"
-                  className="w-40 h-10 border border-gray-700 p-2 rounded-md"
-                />
-                <img
-                  src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Nextjs-logo.svg"
-                  alt="Next.js"
-                  className="w-40 h-10 border border-gray-700 p-2 rounded-md"
-                />
-                <img
-                  src="https://upload.wikimedia.org/wikipedia/commons/3/37/Firebase_Logo.svg"
-                  alt="Firebase"
-                  className="w-40 h-10 border border-gray-700 p-2 rounded-md"
-                />
-                <img
-                  src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
-                  alt="React"
-                  className="w-40 h-10 border border-gray-700 p-2 rounded-md"
-                />
+            <div className="marquee-right   mt-5">
+              <div className="flex gap-4  whitespace-nowrap">
+                <span className="border border-gray-700 px-2 flex justify-center items-center rounded-md">
+                  JavaScript (ES6+)
+                </span>
+                <span className="border border-gray-700 px-2 flex justify-center items-center rounded-md">
+                  Redux Toolkit
+                </span>
+                <span className="border border-gray-700 px-2 flex justify-center items-center rounded-md">
+                  RESTful APIs
+                </span>
+                <span className="border border-gray-700 px-2 flex justify-center items-center rounded-md">
+                  Material UI
+                </span>
+                <span className="border border-gray-700 px-2 flex justify-center items-center rounded-md">
+                  Git & GitHub
+                </span>
+                <span className="border border-gray-700 px-2 flex justify-center items-center rounded-md">
+                  Performance Optimization
+                </span>
+                <span className="border border-gray-700 px-2 flex justify-center items-center rounded-md">
+                  Redux Toolkit
+                </span>
+                <span className="border border-gray-700 px-2 flex justify-center items-center rounded-md">
+                  RESTful APIs
+                </span>
+                <span className="border border-gray-700 px-2 flex justify-center items-center rounded-md">
+                  Material UI
+                </span>
+                <span className="border border-gray-700 px-2 flex justify-center items-center rounded-md">
+                  Git & GitHub
+                </span>
+                <span className="border border-gray-700 px-2 flex justify-center items-center rounded-md">
+                  Performance Optimization
+                </span>
               </div>
             </div>
           </div>

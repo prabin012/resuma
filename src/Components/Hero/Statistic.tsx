@@ -17,7 +17,7 @@ const stats = [
   {
     icon: "ri-award-line",
     value: "10+",
-    label: "Awards Winner",
+    label: "Awards Certificates",
   },
 ];
 

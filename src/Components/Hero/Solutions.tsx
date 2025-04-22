@@ -2,46 +2,45 @@ const CustomSolutions = () => {
   const services = [
     {
       iconClass: "ri-window-fill",
-      title: "Web & App Development",
+      title: "Full-Stack Web Development",
       description:
-        "Crafting visually appealing and user-friendly interfaces using HTML, CSS, JavaScript, and modern frameworks like React and Angular.",
-      highlight:
-        "HTML, CSS, JavaScript, and modern frameworks like React and Angular",
+        "Building seamless and responsive web applications using React.js, Next.js, and Node.js.",
+      highlight: "React.js, Next.js, and Node.js",
     },
     {
-      iconClass: "ri-database-fill",
-      title: "Database Management",
+      iconClass: "ri-database-2-fill",
+      title: "Scalable Database Solutions",
       description:
-        "Designing and managing databases such as MySQL, PostgreSQL, and MongoDB.",
-      highlight: "MySQL, PostgreSQL, and MongoDB",
+        "Designing and managing scalable databases using MongoDB, PostgreSQL, and cloud-based services.",
+      highlight: "MongoDB, PostgreSQL",
     },
     {
-      iconClass: "ri-cloud-fill",
-      title: "API Development",
+      iconClass: "ri-links-fill",
+      title: "API Architecture & Integration",
       description:
-        "Creating and integrating RESTful APIs to enable smooth interaction between front-end and back-end systems.",
-      highlight: "RESTful APIs",
+        "Developing secure and scalable RESTful APIs using Express.js and integrating with third-party services.",
+      highlight: "RESTful APIs using Express.js",
     },
     {
-      iconClass: "ri-speed-fill",
-      title: "Performance Optimization",
+      iconClass: "ri-speed-up-fill",
+      title: "Performance & Optimization",
       description:
-        "Improving the speed and performance of web applications to provide a better user experience. Work with NodeJS, Express.",
-      highlight: "NodeJS, Express",
+        "Optimizing front-end performance, lazy loading, code splitting, and reducing bundle size for faster UX.",
+      highlight: "performance, lazy loading, code splitting",
     },
     {
-      iconClass: "ri-shopping-cart-fill",
-      title: "E-commerce Solutions",
+      iconClass: "ri-store-3-fill",
+      title: "E-commerce Platform Development",
       description:
-        "Developing scalable and secure payment solutions for e-commerce platforms tailored to your business needs.",
-      highlight: "payment solutions",
+        "Developing custom, secure, and user-friendly online stores with integrated payments and dashboards.",
+      highlight: "secure online stores with integrated payments",
     },
     {
-      iconClass: "ri-robot-fill",
-      title: "Integrating AI",
+      iconClass: "ri-brain-fill",
+      title: "AI-Powered Enhancements",
       description:
-        "Boost your applications with AI for improved efficiency, automation, and enhanced user experience.",
-      highlight: "AI",
+        "Bringing smart solutions with AI tools to automate tasks, boost UX, and personalize user interaction.",
+      highlight: "AI tools to automate tasks",
     },
   ];
 
