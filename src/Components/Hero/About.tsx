@@ -33,7 +33,7 @@ const HeroSection = () => {
                 Full-stack developer experienced in Node.js, React, JavaScript,
                 TypeScript, and MongoDB, building scalable MERN apps with clean
                 UI, API integration, and database management.
-              </span>{" "}
+              </span>
               <br />I deliver web solutions that are both innovative and robust.
             </p>
             <div className="flex md:items-end ">
