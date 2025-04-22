@@ -1,7 +1,7 @@
-import { createBrowserRouter } from "react-router-dom";
+import { createHashRouter } from "react-router-dom";
 import HomeLayout from "../Components/Home";
 
-export const route = createBrowserRouter([
+export const route = createHashRouter([
   {
     path: "/",
     element: <HomeLayout />,
