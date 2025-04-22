@@ -1,6 +1,6 @@
 import { RouterProvider } from "react-router-dom";
 import "./App.css";
-import "./assets/index.css";
+import "./index.css";
 import { route } from "./Routes/route";
 import "remixicon/fonts/remixicon.css";
 
