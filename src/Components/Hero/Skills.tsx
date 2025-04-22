@@ -15,17 +15,14 @@ const MySkills = () => {
   ];
 
   return (
-    <div className="w-screen flex justify-center mt-5">
-      <div className="w-7xl relative dark:bg-[#1f1f28] border border-green-900 rounded-lg overflow-hidden text-white p-10">
-        {/* Header Section */}
+    <div className="w-full flex justify-center mt-5">
+      <div className="w-full max-w-screen-xl relative dark:bg-[#1f1f28] border border-green-900 rounded-lg overflow-hidden text-white p-10">
         <div className="mb-10 text-left">
           <h2 className="text-green-500 text-sm font-semibold mb-2">
             Projects
           </h2>
           <h1 className="text-4xl font-bold">My Skills</h1>
         </div>
-
-        {/* Main Content */}
         <div className="flex flex-col lg:flex-row gap-10">
           {/* Skill Icons */}
           {/* <div className="flex-1">
@@ -41,8 +38,8 @@ const MySkills = () => {
               ))}
             </div>
           </div> */}
-          <div className="col-span-1 w-2/4 flex gap-5 flex-col">
-            <div className="w-2/3">
+          <div className="col-span-1 w-6/6 z-50 md:w-2/6 flex gap-5 flex-col">
+            <div className="">
               <div className="overflow-hidden w-full">
                 <div className="marquee flex gap-4 whitespace-nowrap">
                   <img
@@ -100,7 +97,7 @@ const MySkills = () => {
                 </div>
               </div>
             </div>
-            <div className="w-2/3">
+            <div className="">
               <div className="overflow-hidden w-full">
                 <div className="marquee-1f flex gap-4 whitespace-nowrap">
                   <img
@@ -158,7 +155,7 @@ const MySkills = () => {
                 </div>
               </div>
             </div>
-            <div className="w-2/3">
+            <div className="">
               <div className="overflow-hidden w-full">
                 <div className="marquee flex gap-4 whitespace-nowrap">
                   <img
@@ -231,7 +228,7 @@ const MySkills = () => {
             </ul>
           </div>
         </div>
-        <div className="flex-1 flex justify-end absolute -right-8 -top-8">
+        <div className="flex-1 flex justify-end z-20 absolute opacity-20 -right-8 -top-8">
           <div className="p-10 rounded-full border border-green-500">
             <div className="p-7 rounded-full border border-green-500 rotate-middle-circle">
               <p className="absolute border p-1 top-0 rounded-full bg-green-900"></p>

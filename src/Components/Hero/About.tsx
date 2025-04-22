@@ -1,7 +1,7 @@
 const HeroSection = () => {
   return (
-    <div className="w-screen flex justify-center mt-5">
-      <section className="min-h-[50vh] p-10 max-w-7xl flex border border-green-900 hover:border-r-green-500 hover:border-b-green-500 rounded-md hover:rounded-xl transition-all duration-500 ease-in-out items-center justify-center bg-white dark:bg-[#1f1f28] text-gray-800 dark:text-white">
+    <div className="w-full flex justify-center mt-5">
+      <section className="min-h-[50vh] p-10 w-full max-w-screen-xl flex border border-green-900 hover:border-r-green-500 hover:border-b-green-500 rounded-md hover:rounded-xl transition-all duration-500 ease-in-out items-center justify-center bg-white dark:bg-[#1f1f28] text-gray-800 dark:text-white">
         <div className=" w-full grid md:grid-cols-2 gap-12 items-center">
           <div className="relative">
             <div className="clip-hex  overflow-hidden max-w-[400px] mx-auto">
@@ -36,8 +36,8 @@ const HeroSection = () => {
               </span>{" "}
               <br />I deliver web solutions that are both innovative and robust.
             </p>
-            <div className="flex items-end">
-              <div className="col-span-1 w-2/4 flex">
+            <div className="flex md:items-end ">
+              <div className="col-span-1 md:w-2/4 flex">
                 <div className="overflow-hidden w-full">
                   <div className="marquee flex gap-4 whitespace-nowrap">
                     <img
@@ -95,7 +95,7 @@ const HeroSection = () => {
                   </div>
                 </div>
               </div>
-              <span className="text-sm text-gray-500 dark:text-gray-400 ml-4">
+              <span className="text-sm hidden md:block text-gray-500 dark:text-gray-400 ml-4">
                 ...and more
               </span>
             </div>

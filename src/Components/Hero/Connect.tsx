@@ -15,8 +15,8 @@ const LetsConnect = () => {
   ];
 
   return (
-    <div className="w-screen flex justify-center mt-5">
-      <div className="w-7xl text-left dark:bg-[#1f1f28] border border-green-900 rounded-lg text-white p-10">
+    <div className="w-full flex justify-center mt-5">
+      <div className="w-full max-w-screen-xl text-left dark:bg-[#1f1f28] border border-green-900 rounded-lg text-white p-10">
         {/* Header Section */}
         <h2 className="text-2xl font-semibold text-green-500 mb-6">
           Let's connect

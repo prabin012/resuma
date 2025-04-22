@@ -28,9 +28,9 @@ const TrustedCompanies = () => {
   ];
 
   return (
-    <div className="w-screen flex justify-center mt-10">
-      <div className=" w-7xl   text-white flex">
-        <div className="flex-1 dark:bg-[#1f1f28] border  border-green-900 rounded-md   ">
+    <div className="w-full flex justify-center mt-10">
+      <div className=" w-full max-w-screen-xl grid grid-cols-1 md:grid-cols-3  text-white ">
+        <div className="col-span-2 dark:bg-[#1f1f28] border  border-green-900 rounded-md   ">
           <div className="mb-10 text-left px-10 pt-10">
             <h2 className="text-green-500 text-sm font-semibold mb-2">
               <i className="ri-circle-fill text-[6px]"></i> Cooperation
@@ -44,8 +44,8 @@ const TrustedCompanies = () => {
             <hr className="border-gray-600 w-20 mt-4" />
           </div>
 
-          <div className="border w-3xl  overflow-hidden gap-4 rounded-md border-gray-600 m-20 p-5">
-            <div className="marquee2 w-3xl">
+          <div className="border overflow-hidden gap-4 col-span-1 rounded-md border-gray-600 m-5 md:m-20  p-5 md:p-0">
+            <div className="marquee2 ">
               <div className="flex  gap-4 whitespace-nowrap">
                 <span className="border border-gray-700 px-2 flex justify-center items-center rounded-md">
                   React.js
@@ -124,7 +124,7 @@ const TrustedCompanies = () => {
             </div>
           </div>
 
-          <div className="flex items-center relative space-x-4 overflow-hidden px-10 pb-10">
+          <div className="flex flex-col md:flex-row items-center relative space-x-4 overflow-hidden px-10 pb-10">
             <div className="p-5 rounded-full border border-green-900">
               <div className="p-5 rounded-full border border-green-900">
                 <img
@@ -148,7 +148,7 @@ const TrustedCompanies = () => {
                 <p className="text-white">prabinmahato415@gmail.com</p>
               </span>
             </div>
-            <div className="flex-1 flex justify-end absolute -right-10 -bottom-10">
+            <div className="flex-1 flex justify-end opacity-20 absolute -right-10 -bottom-10">
               <div className="p-10 rounded-full border border-green-500">
                 <div className="p-7 rounded-full border border-green-500 rotate-middle-circle">
                   <p className="absolute border p-1 top-0 rounded-full bg-green-900"></p>
@@ -163,7 +163,7 @@ const TrustedCompanies = () => {
         </div>
 
         {/* Sidebar */}
-        <div className="w-80 dark:bg-[#1f1f28] p-5 text-left border border-green-900 rounded-md ml-5">
+        <div className="col-span-1 dark:bg-[#1f1f28] p-5 text-left border border-green-900 rounded-md ml-5">
           <h3 className="text-2xl font-semibold mb-6">Git Journaling</h3>
           <div className="space-y-6">
             {journalEntries.map((entry, index) => (
