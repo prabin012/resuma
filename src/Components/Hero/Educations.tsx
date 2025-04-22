@@ -33,8 +33,8 @@ const EducationResearch = () => {
   ];
 
   return (
-    <div className="w-screen flex justify-center mt-10">
-      <div className="w-7xl  text-white ">
+    <div className="w-full flex justify-center mt-10">
+      <div className="w-full max-w-screen-xl  text-white ">
         <div className="flex flex-col lg:flex-row gap-10">
           {/* Education Section */}
           <div className="flex-1 dark:bg-[#1f1f28] p-5 text-left border border-green-900 rounded-lg">

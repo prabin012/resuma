@@ -45,8 +45,8 @@ const CustomSolutions = () => {
   ];
 
   return (
-    <div className="w-screen flex justify-center mt-5">
-      <div className="w-7xl dark:bg-[#1f1f28] text-white p-10 border border-green-900 rounded-md  ">
+    <div className="w-full flex justify-center mt-5">
+      <div className=" w-full max-w-screen-xl  dark:bg-[#1f1f28] text-white p-10 border border-green-900 rounded-md  ">
         {/* Header Section */}
         <div className="mb-10 text-center">
           <h2 className="text-green-500 text-sm font-semibold mb-2">
