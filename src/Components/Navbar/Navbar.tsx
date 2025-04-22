@@ -36,7 +36,7 @@ const Navbar = () => {
           {/* Middle: Navigation Links */}
           <nav className="hidden lg:flex gap-6 text-sm font-medium">
             {[
-              "Introduction",
+              "About me",
               "Experience",
               "Expertise",
               "Education",
@@ -46,7 +46,7 @@ const Navbar = () => {
               <a
                 key={item}
                 // href={`#${item.toLowerCase().replace(/\s/g, "")}`}
-                className="hover:text-white transition duration-200"
+                className="hover:text-white transition duration-200 cursor-pointer"
                 onClick={() =>
                   handleClick(item.toLowerCase().replace(/\s/g, ""))
                 }
@@ -58,17 +58,33 @@ const Navbar = () => {
 
           {/* Right: Social Icons + Theme Toggle */}
           <div className="flex items-center gap-4 text-xl">
-            <a href="#" className="hover:text-white transition">
+            <a
+              href="https://www.linkedin.com/in/iprabin/"
+              target="_blank"
+              className="hover:text-white transition"
+            >
               <i className="ri-linkedin-box-fill" />
             </a>
-            <a href="#" className="hover:text-white transition">
+            <a
+              href="https://github.com/prabin012"
+              target="_blank"
+              className="hover:text-white transition"
+            >
               <i className="ri-github-fill" />
             </a>
-            <a href="#" className="hover:text-white transition">
+            <a
+              href="https://www.facebook.com/iprabin01"
+              target="_blank"
+              className="hover:text-white transition"
+            >
               <i className="ri-facebook-circle-fill" />
             </a>
-            <a href="#" className="hover:text-white transition">
-              <i className="ri-twitter-x-line" />
+            <a
+              href="https://www.instagram.com/i_prabin01"
+              target="_blank"
+              className="hover:text-white transition"
+            >
+              <i className="ri-instagram-line" />
             </a>
 
             {/* <button className="text-yellow-400 hover:text-yellow-300 text-xl ml-2">

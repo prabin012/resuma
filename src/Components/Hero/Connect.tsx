@@ -1,12 +1,16 @@
 const LetsConnect = () => {
   const contactInfo = [
-    { icon: "ri-phone-fill", label: "Phone Number", value: "+1-234-567-8901" },
-    { icon: "ri-mail-fill", label: "Email", value: "contact@william.design" },
-    { icon: "ri-skype-fill", label: "Skype", value: "WilliamDesignUX" },
+    { icon: "ri-phone-fill", label: "Phone Number", value: "+977-9808676092" },
+    {
+      icon: "ri-mail-fill",
+      label: "Email",
+      value: "prabinmahato415@gmail.com",
+    },
+    { icon: "ri-phone-fill", label: "web", value: "prabinmahato.com.np" },
     {
       icon: "ri-map-pin-fill",
       label: "Address",
-      value: "0811 Erdman Prairie, Joaville CA",
+      value: "Kathmandu, Nepal",
     },
   ];
 

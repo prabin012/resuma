@@ -86,9 +86,8 @@
 }
 
 .marquee2 {
-  width: 20%;
   display: flex;
-  animation: scroll-left 10s linear infinite;
+  animation: scroll-left 20s linear infinite;
 }
 
 @keyframes scroll-left {
@@ -97,22 +96,21 @@
   }
 
   100% {
-    transform: translateX(-100%);
+    transform: translateX(-50%);
   }
 }
 .marquee-right {
-  width: 20%;
   display: flex;
-  animation: scroll-right 10s linear infinite;
+  animation: scroll-right-2 20s linear infinite;
 }
 
-@keyframes scroll-right {
+@keyframes scroll-right-2 {
   0% {
-    transform: translateX(-100%);
+    transform: translateX(-50%);
   }
 
   100% {
-    transform: translateX(100%);
+    transform: translateX(0%);
   }
 }
 .marquee-1f {

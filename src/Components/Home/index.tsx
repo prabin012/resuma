@@ -13,6 +13,22 @@ import Footer from "../Footer/Footer";
 import WorkedWith from "../Hero/Work";
 
 const HomeLayout = () => {
+  const scrollToElement = (href: string) => {
+    console.log(href);
+    const element = document.querySelector(`#${href}`);
+    console.log(element);
+    if (element) {
+      const offset = (element as HTMLElement).offsetTop - 130;
+      window.scrollTo({
+        top: offset,
+        behavior: "smooth",
+      });
+    }
+  };
+  const handleClick = (item: string) => {
+    console.log(item);
+    scrollToElement(item);
+  };
   return (
     <div className="dark:bg-[#1f1f26] w-screen pt-10 bodyImage">
       <Navbar />
@@ -40,6 +56,16 @@ const HomeLayout = () => {
         <LetsConnect />
       </div>
       <Footer />
+      <div
+        className=" text-center flex cursor-pointer  z-50 justify-center items-center w-10 fixed bottom-10 right-5 "
+        onClick={() => handleClick("introduction")}
+      >
+        <span>
+          <span>
+            <i className="ri-arrow-up-box-fill text-4xl text-green-500"></i>
+          </span>
+        </span>
+      </div>
     </div>
   );
 };
