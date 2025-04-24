@@ -96,6 +96,12 @@ const Navbar = () => {
             >
               Join us
             </span>
+            <span
+              onClick={() => navigate("/dashboard")}
+              className="text-xs border border-green-900 px-3 py-2 rounded-md bg-green-900 cursor-pointer font-bold"
+            >
+              Profile
+            </span>
             {/* <button className="text-yellow-400 hover:text-yellow-300 text-xl ml-2">
               <i className="ri-sun-line"></i>
             </button> */}
