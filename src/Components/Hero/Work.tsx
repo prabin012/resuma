@@ -55,7 +55,7 @@ const RecentWorks = ({ swiperRef, isActive, project }: any) => {
   };
 
   return (
-    <div className="w-full flex justify-center mt-5">
+    <div className="w-full flex justify-center   mt-5">
       <motion.div
         variants={containerVariants}
         initial="hidden"
@@ -70,7 +70,7 @@ const RecentWorks = ({ swiperRef, isActive, project }: any) => {
             <h1 className="text-4xl font-bold">My Recent Works</h1>
           </div>
           <div className="border border-gray-700 rounded-lg p-5 overflow-hidden flex flex-col lg:flex-row">
-            <div className="lg:w-2/5">
+            <div className="lg:w-2/5 max-h-[60vh]">
               <img
                 src={project.image}
                 alt={project.title}
@@ -118,13 +118,13 @@ const RecentWorks = ({ swiperRef, isActive, project }: any) => {
                 <div className="flex space-x-2">
                   <button
                     onClick={handlePrev}
-                    className="w-8 h-8 bg-gray-700 rounded-full flex items-center justify-center text-gray-400 hover:bg-green-500 hover:text-white"
+                    className="w-8 h-8 cursor-pointer bg-gray-700 rounded-full flex items-center justify-center text-gray-400 hover:bg-green-500 hover:text-white"
                   >
                     ←
                   </button>
                   <button
                     onClick={handleNext}
-                    className="w-8 h-8 bg-gray-700 rounded-full flex items-center justify-center text-gray-400 hover:bg-green-500 hover:text-white"
+                    className="w-8 h-8 cursor-pointer bg-gray-700 rounded-full flex items-center justify-center text-gray-400 hover:bg-green-500 hover:text-white"
                   >
                     →
                   </button>

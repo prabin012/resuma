@@ -1,3 +1,5 @@
+import { useNavigate } from "react-router-dom";
+
 const Navbar = () => {
   const scrollToElement = (href: string) => {
     console.log(href);
@@ -15,9 +17,10 @@ const Navbar = () => {
     console.log(item);
     scrollToElement(item);
   };
+  const navigate = useNavigate();
   return (
-    <div className="w-screen justify-center flex items-center  ">
-      <header className="bg-[#1f1f28] border border-green-900 text-gray-300  rounded-md  w-7xl z-50 shadow-md">
+    <div className="w-full justify-center flex items-center  ">
+      <header className="bg-[#1f1f28] border border-green-900 text-gray-300  rounded-md  w-full max-w-screen-xl z-50 shadow-md">
         <div className=" mx-auto px-6 py-5 flex items-center justify-between">
           {/* Left: Menu Icon + Logo */}
           <div className="flex items-center gap-4">
@@ -87,6 +90,12 @@ const Navbar = () => {
               <i className="ri-instagram-line" />
             </a>
 
+            <span
+              onClick={() => navigate("/login")}
+              className="text-xs border border-green-900 px-3 py-2 rounded-md bg-green-900 cursor-pointer font-bold"
+            >
+              Join us
+            </span>
             {/* <button className="text-yellow-400 hover:text-yellow-300 text-xl ml-2">
               <i className="ri-sun-line"></i>
             </button> */}

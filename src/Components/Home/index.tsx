@@ -30,7 +30,7 @@ const HomeLayout = () => {
     scrollToElement(item);
   };
   return (
-    <div className="dark:bg-[#1f1f26] w-screen pt-10 bodyImage">
+    <div className="dark:bg-[#1f1f26] overflow-x-hidden max-w-screen pt-10 bodyImage">
       <Navbar />
       <Outlet />
       <div id="introduction">

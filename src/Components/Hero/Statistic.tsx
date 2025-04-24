@@ -23,7 +23,7 @@ const stats = [
 
 const StatsSection = () => {
   return (
-    <div className="w-full flex justify-center px-4 sm:px-6 md:px-10 mt-5">
+    <div className="w-full flex justify-center  sm:px-6 md:px-10 mt-5">
       <section className="w-full max-w-screen-xl stats-bg bg-center bg-cover p-6 sm:p-10 md:p-14 lg:p-16 border border-green-900 rounded-lg mt-10">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 md:gap-10 text-center text-gray-800 dark:text-white">
           {stats.map((stat, index) => (
