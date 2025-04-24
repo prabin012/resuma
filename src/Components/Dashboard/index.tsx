@@ -1,5 +1,6 @@
 import { useState } from "react";
 import EditableHeroDashboard from "./About";
+import EducationResearch from "./Educations";
 
 const Dashboard = () => {
   const [activeTab, setActiveTab] = useState("about");
@@ -11,7 +12,7 @@ const Dashboard = () => {
       case "skills":
         return <div>Skills Section</div>;
       case "education":
-        return <div>Education Section</div>;
+        return <EducationResearch />;
       case "projects":
         return <div>Projects Section</div>;
       default:
@@ -22,51 +23,52 @@ const Dashboard = () => {
   return (
     <div className="min-h-screen flex bg-gray-100 dark:bg-[#1f1f28] text-gray-800 dark:text-white">
       {/* Sidebar */}
-      <aside className="w-64 bg-white dark:bg-[#2e2e38] border-r dark:border-gray-700 p-5 space-y-4">
-        <h2 className="text-2xl font-bold text-lime-500 mb-6">Dashboard</h2>
-        <nav className="space-y-3">
-          <button
-            className={`block w-full text-left px-3 py-2 rounded-md transition hover:bg-lime-100 dark:hover:bg-lime-900 ${
-              activeTab === "about" ? "bg-lime-200 dark:bg-lime-800" : ""
-            }`}
-            onClick={() => setActiveTab("about")}
-          >
-            About
-          </button>
-          <button
-            className={`block w-full text-left px-3 py-2 rounded-md transition hover:bg-lime-100 dark:hover:bg-lime-900 ${
-              activeTab === "skills" ? "bg-lime-200 dark:bg-lime-800" : ""
-            }`}
-            onClick={() => setActiveTab("skills")}
-          >
-            Skills
-          </button>
-          <button
-            className={`block w-full text-left px-3 py-2 rounded-md transition hover:bg-lime-100 dark:hover:bg-lime-900 ${
-              activeTab === "education" ? "bg-lime-200 dark:bg-lime-800" : ""
-            }`}
-            onClick={() => setActiveTab("education")}
-          >
-            Education
-          </button>
-          <button
-            className={`block w-full text-left px-3 py-2 rounded-md transition hover:bg-lime-100 dark:hover:bg-lime-900 ${
-              activeTab === "projects" ? "bg-lime-200 dark:bg-lime-800" : ""
-            }`}
-            onClick={() => setActiveTab("projects")}
-          >
-            Projects
-          </button>
-        </nav>
-      </aside>
 
       {/* Main Content */}
       <div className="flex-1 flex flex-col">
         {/* Top Bar */}
         <header className="flex justify-between items-center p-4 bg-white dark:bg-[#2e2e38] border-b dark:border-gray-700 shadow-md">
           <div className="text-xl font-semibold text-lime-600">
-            Prabin Admin
+            Prabin Kumar
           </div>
+          <aside className="">
+            <nav className="gap-3 flex">
+              <button
+                className={`block w-full text-left px-3 py-2 rounded-md transition hover:bg-lime-100 dark:hover:bg-lime-900 ${
+                  activeTab === "about" ? "bg-lime-200 dark:bg-lime-800" : ""
+                }`}
+                onClick={() => setActiveTab("about")}
+              >
+                About
+              </button>
+              <button
+                className={`block w-full text-left px-3 py-2 rounded-md transition hover:bg-lime-100 dark:hover:bg-lime-900 ${
+                  activeTab === "skills" ? "bg-lime-200 dark:bg-lime-800" : ""
+                }`}
+                onClick={() => setActiveTab("skills")}
+              >
+                Skills
+              </button>
+              <button
+                className={`block w-full text-left px-3 py-2 rounded-md transition hover:bg-lime-100 dark:hover:bg-lime-900 ${
+                  activeTab === "education"
+                    ? "bg-lime-200 dark:bg-lime-800"
+                    : ""
+                }`}
+                onClick={() => setActiveTab("education")}
+              >
+                Education
+              </button>
+              <button
+                className={`block w-full text-left px-3 py-2 rounded-md transition hover:bg-lime-100 dark:hover:bg-lime-900 ${
+                  activeTab === "projects" ? "bg-lime-200 dark:bg-lime-800" : ""
+                }`}
+                onClick={() => setActiveTab("projects")}
+              >
+                Projects
+              </button>
+            </nav>
+          </aside>
           <div className="space-x-4">
             <button className="text-gray-600 dark:text-gray-300 hover:text-lime-500 transition">
               Home
