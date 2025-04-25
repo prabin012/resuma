@@ -1,6 +1,7 @@
 import { useState } from "react";
 import EditableHeroDashboard from "./About";
 import EducationResearch from "./Educations";
+import CustomSolutionsEditor from "./Solutions";
 
 const Dashboard = () => {
   const [activeTab, setActiveTab] = useState("about");
@@ -15,6 +16,8 @@ const Dashboard = () => {
         return <EducationResearch />;
       case "projects":
         return <div>Projects Section</div>;
+      case "solutions":
+        return <CustomSolutionsEditor />;
       default:
         return <div>Select a section</div>;
     }
@@ -66,6 +69,14 @@ const Dashboard = () => {
                 onClick={() => setActiveTab("projects")}
               >
                 Projects
+              </button>
+              <button
+                className={`block w-full text-left px-3 py-2 rounded-md transition hover:bg-lime-100 dark:hover:bg-lime-900 ${
+                  activeTab === "projects" ? "bg-lime-200 dark:bg-lime-800" : ""
+                }`}
+                onClick={() => setActiveTab("solutions")}
+              >
+                Solutions
               </button>
             </nav>
           </aside>
