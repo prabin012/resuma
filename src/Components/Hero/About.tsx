@@ -102,6 +102,12 @@ const HeroSection = () => {
 
             <div className="mt-10">
               <a
+                href={`mailto:prabinmahato415@gmail.com?subject=Schedule Interview for Full Stack Role&body=Hi Prabin,%0D%0A%0D%0AI am interested in discussing a role opportunity with you. Let me know your available time for an interview.%0D%0A%0D%0ARegards,%0D%0A[Your Name]`}
+                className="inline-block mr-10 bg-green-600 hover:bg-green-700 text-white font-semibold py-2 px-4 rounded-lg transition duration-300"
+              >
+                Hire me
+              </a>
+              <a
                 href="/images/PrabinResume.pdf"
                 download
                 className="inline-flex items-center gap-2  font-semibold "
