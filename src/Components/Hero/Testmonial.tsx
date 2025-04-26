@@ -67,13 +67,13 @@ const TrustedCompanies = () => {
                 </span>
 
                 <span className="border border-gray-700 px-2 flex justify-center items-center rounded-md">
-                  Next.js
+                  Apollo client
                 </span>
                 <span className="border border-gray-700 px-2 flex justify-center items-center rounded-md">
                   Tailwind CSS
                 </span>
                 <span className="border border-gray-700 px-2 flex justify-center items-center rounded-md">
-                  TypeScript
+                  Apollo server
                 </span>
                 <span className="border border-gray-700 px-2 flex justify-center items-center rounded-md">
                   Responsive Design
@@ -115,7 +115,7 @@ const TrustedCompanies = () => {
                   Material UI
                 </span>
                 <span className="border border-gray-700 px-2 flex justify-center items-center rounded-md">
-                  Git & GitHub
+                  Chakra UI
                 </span>
                 <span className="border border-gray-700 px-2 flex justify-center items-center rounded-md">
                   Performance Optimization
