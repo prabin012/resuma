@@ -11,7 +11,7 @@ const GithubStats = () => {
             </h2>
             <p className="mt-2 text-gray-600 dark:text-gray-300 text-sm sm:text-base">
               Here's an overview of my GitHub activity, including contribution
-              heatmaps, commit streaks, and project involvement.
+              heatmaps, commit streak, and project involvement.
             </p>
           </div>
           <div className="border dark:bg-[#1f1f28] border-green-900 p-4 rounded-lg shadow-md">
