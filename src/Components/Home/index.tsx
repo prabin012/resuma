@@ -11,6 +11,7 @@ import MySkills from "../Hero/Skills";
 import LetsConnect from "../Hero/Connect";
 import Footer from "../Footer/Footer";
 import WorkedWith from "../Hero/Work";
+import GithubStats from "../Hero/GithubStats";
 
 const HomeLayout = () => {
   const scrollToElement = (href: string) => {
@@ -41,7 +42,7 @@ const HomeLayout = () => {
       </div>
       <TrustedCompanies />
       <CustomSolutions />
-
+      <GithubStats />
       <Experience />
       <div id="education">
         <EducationResearch />
