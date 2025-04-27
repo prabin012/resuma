@@ -2,7 +2,10 @@ import GitHubCalendar from "react-github-calendar";
 
 const GithubStats = () => {
   return (
-    <div className="w-full flex justify-center sm:px-6 md:px-10 mt-5">
+    <div
+      className="w-full flex justify-center sm:px-6 md:px-10 mt-5"
+      id="portfolio"
+    >
       <section className="w-full max-w-screen-xl stats-bg bg-center bg-cover p-6 sm:p-10  lg:p-16 border border-green-900 rounded-lg mt-10">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-1 gap-8 md:gap-10 text-center text-gray-800 dark:text-white">
           <div className="text-left ">
@@ -19,9 +22,8 @@ const GithubStats = () => {
               username="iprabin01"
               blockSize={15}
               blockMargin={5}
-              fontSize={16}
+              fontSize={15}
               colorScheme="dark"
-              style={{ width: "100vh" }}
             />
           </div>
           {/* <img
