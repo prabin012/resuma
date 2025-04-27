@@ -3,6 +3,7 @@ import HomeLayout from "../Components/Home";
 import Login from "../Auth/Login";
 import Dashboard from "../Components/Dashboard";
 import PageNotFound from "../UI/PageNotFound";
+// import BillingScreen from "../Store";
 
 export const route = createBrowserRouter([
   {
@@ -17,6 +18,10 @@ export const route = createBrowserRouter([
     path: "/notFound",
     element: <PageNotFound />,
   },
+  // {
+  //   path: "/store",
+  //   element: <BillingScreen />,
+  // },
   {
     path: "/",
     element: <HomeLayout />,
