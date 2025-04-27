@@ -2,9 +2,11 @@ import { useState } from "react";
 import EditableHeroDashboard from "./About";
 import EducationResearch from "./Educations";
 import CustomSolutionsEditor from "./Solutions";
+import { useNavigate } from "react-router-dom";
 
 const Dashboard = () => {
   const [activeTab, setActiveTab] = useState("about");
+  const navigate = useNavigate();
 
   const renderContent = () => {
     switch (activeTab) {
@@ -24,14 +26,17 @@ const Dashboard = () => {
   };
 
   return (
-    <div className="min-h-screen flex bg-gray-100 dark:bg-[#1f1f28] text-gray-800 dark:text-white">
+    <div className="min-h-screen flex  bg-gray-100 dark:bg-[#1f1f28] text-gray-800 dark:text-white">
       {/* Sidebar */}
 
       {/* Main Content */}
-      <div className="flex-1 flex flex-col">
+      <div className="flex-1  flex flex-col">
         {/* Top Bar */}
-        <header className="flex justify-between items-center p-4 bg-white dark:bg-[#2e2e38] border-b dark:border-gray-700 shadow-md">
-          <div className="text-xl font-semibold text-lime-600">
+        <header className="flex pl-10 justify-between items-center p-4 bg-white dark:bg-[#2e2e38] border-b dark:border-gray-700 shadow-md">
+          <div
+            className="text-xl font-semibold text-lime-600 cursor-pointer"
+            onClick={() => navigate("/")}
+          >
             Prabin Kumar
           </div>
           <aside className="">
@@ -80,8 +85,11 @@ const Dashboard = () => {
               </button>
             </nav>
           </aside>
-          <div className="space-x-4">
-            <button className="text-gray-600 dark:text-gray-300 hover:text-lime-500 transition">
+          <div className="space-x-4 pr-10">
+            <button
+              className="text-gray-600 cursor-pointer dark:text-gray-300 hover:text-lime-500 transition"
+              onClick={() => navigate("/")}
+            >
               Home
             </button>
             <button className="text-gray-600 dark:text-gray-300 hover:text-red-500 transition">
