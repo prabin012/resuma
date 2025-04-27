@@ -1,14 +1,20 @@
-import { useState } from "react";
+import { useForm } from "react-hook-form";
+import { useNavigate } from "react-router-dom";
+import InputField from "../../UI/InputField";
 
-const LoginForm = ({ setCurrentStep }: any) => {
+interface IEmailInput {
+  email: string;
+}
+
+const LoginForm = () => {
   const emails = "kumarprabin936@gmail.com";
-  const [email, setEmail] = useState<string>();
-
-  const handleNext = () => {
-    if (email === emails) {
-      setCurrentStep(1);
+  const form = useForm<IEmailInput>();
+  const navigate = useNavigate();
+  const handleNext = (data: { email: string }) => {
+    if (data?.email === emails) {
+      navigate("/dashboard");
     } else {
-      setCurrentStep(2);
+      return form.setError("email", { message: "Didn't match !" });
     }
   };
   return (
@@ -24,27 +30,20 @@ const LoginForm = ({ setCurrentStep }: any) => {
           </p>
         </div>
 
-        <form className="space-y-6">
+        <form className="space-y-6" onSubmit={form.handleSubmit(handleNext)}>
           <div className="text-left">
-            <label
-              htmlFor="email"
-              className="block text-sm font-medium text-gray-700 dark:text-gray-300"
-            >
-              Email address
-            </label>
-            <input
+            <InputField
+              label="Email Address"
+              placeholder="Enter your email"
+              sizes="medium"
               type="email"
-              id="email"
-              onChange={(e) => setEmail(e.target.value)}
-              placeholder="you@example.com"
-              className="mt-1 block w-full px-4 py-2 border border-gray-300 dark:border-gray-700 rounded-md shadow-sm focus:outline-none focus:ring-lime-500 focus:border-lime-500 bg-white dark:bg-[#2a2a3c] text-gray-900 dark:text-white"
-              required
+              {...form.register("email", { required: "Email is required" })}
+              error={form.formState.errors.email}
             />
           </div>
 
           <button
             type="submit"
-            onClick={handleNext}
             className="w-full flex items-center justify-center gap-2 bg-green-900 cursor-pointer hover:bg-lime-700 text-white font-semibold py-2 px-4 rounded-md transition-all duration-300"
           >
             Proceed
