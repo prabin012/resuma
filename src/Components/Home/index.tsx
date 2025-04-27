@@ -37,21 +37,26 @@ const HomeLayout = () => {
       <div id="introduction">
         <HeroSection />
       </div>
-      <div id="portfolio">
+      <div id="">
         <StatsSection />
       </div>
       <TrustedCompanies />
       <CustomSolutions />
-      <GithubStats />
-      <Experience />
       <div id="education">
         <EducationResearch />
       </div>
       <div id="experience">
-        <WorkedWith />
+        <Experience />
       </div>
+
       <div id="expertise">
         <MySkills />
+      </div>
+      <div id="">
+        <WorkedWith />
+      </div>
+      <div id="portfolio">
+        <GithubStats />
       </div>
       <div id="contact">
         <LetsConnect />
