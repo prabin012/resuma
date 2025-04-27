@@ -4,10 +4,10 @@ import PasswordForm from "./PasswordForm";
 import RegisterForm from "./RegisterForm";
 
 const Login = () => {
-  const [currentStep, setCurrentStep] = useState<number>(0);
+  const [currentStep] = useState<number>(0);
   switch (currentStep) {
     case 0:
-      return <LoginForm setCurrentStep={setCurrentStep} />;
+      return <LoginForm />;
     case 1:
       return <PasswordForm />;
     case 2:
