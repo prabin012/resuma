@@ -6,6 +6,10 @@ import PageNotFound from "../UI/PageNotFound";
 
 export const route = createBrowserRouter([
   {
+    path: "/",
+    element: <HomeLayout />,
+  },
+  {
     path: "/login",
     element: <Login />,
   },
@@ -18,7 +22,7 @@ export const route = createBrowserRouter([
     element: <PageNotFound />,
   },
   {
-    path: "/",
-    element: <HomeLayout />,
+    path: "*",
+    element: <PageNotFound />,
   },
 ]);
