@@ -1,46 +1,34 @@
-import { Home } from "lucide-react";
+import { Home, ArrowLeft } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 
 export default function SimpleAttractive404() {
   const navigate = useNavigate();
   return (
-    <div className="flex items-center justify-center min-h-screen   dark:bg-[#1f1f26]  px-4">
-      <div className="w-full max-w-md bg-white dark:bg-[#0b1014] rounded-xl shadow-lg overflow-hidden">
-        <div className="p-8">
-          {/* Illustration */}
-          <div className="flex justify-center mb-6">
-            <div className="relative">
-              <div className="w-32 h-32 bg-indigo-100 dark:bg-[#1f1f26] rounded-full flex items-center justify-center">
-                <span className="text-5xl font-bold text-indigo-500 dark:text-indigo-300">
-                  ?
-                </span>
-              </div>
-              <div className="absolute -top-2 -right-2 w-10 h-10 bg-red-500 rounded-full flex items-center justify-center text-white font-bold text-xs">
-                404
-              </div>
-            </div>
-          </div>
-
-          {/* Content */}
-          <div className="text-center">
-            <h1 className="text-2xl font-bold text-gray-800 dark:text-white mb-2">
-              Page Not Found
-            </h1>
-            <p className="text-gray-600 dark:text-gray-300 mb-6">
-              Oops! The page you're looking for seems to have wandered off.
-            </p>
-
-            {/* Buttons */}
-            <div className="flex flex-col space-y-3">
-              <button
-                onClick={() => navigate("/")}
-                className="w-full dark:bg-[#1f1f26] cursor-pointer hover:bg-indigo-700 text-white py-2 px-4 rounded-lg transition duration-200 flex items-center justify-center"
-              >
-                <Home size={18} className="mr-2" />
-                <span>Back to Home</span>
-              </button>
-            </div>
-          </div>
+    <div className="flex items-center justify-center min-h-screen bg-[#1f1f26] text-gray-300 px-4">
+      <div className="text-center max-w-md">
+        <h1 className="text-9xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500 mb-6">
+          404
+        </h1>
+        <h2 className="text-2xl font-light mb-4 text-white">Page Not Found</h2>
+        <p className="text-gray-400 mb-8 text-lg">
+          Sorry, I couldn't find the page you're looking for.
+        </p>
+        <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <button className="px-6 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition duration-200 flex items-center justify-center">
+            <Home size={18} className="mr-2" />
+            <span>Prabin Kumar Mahato</span>
+          </button>
+          <button
+            onClick={() => navigate("/")}
+            className="px-6 py-2  bg-[#2a2a35] text-gray-300 rounded-md hover:bg-[#32323e] transition duration-200 flex items-center justify-center"
+          >
+            <ArrowLeft size={18} className="mr-2" />
+            <span>Go Back</span>
+          </button>
+        </div>
+        <div className="mt-16">
+          <div className="w-16 h-1 bg-blue-500 mx-auto mb-4"></div>
+          <p className="text-gray-500">© 2025 prabinmahato.com.np</p>
         </div>
       </div>
     </div>
