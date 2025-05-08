@@ -35,7 +35,7 @@ const Navbar = () => {
               href="/"
               className="flex items-center gap-2 text-xl font-semibold text-white"
             >
-              <i className="ri-code-line text-lime-400 text-2xl" />
+              <i className="ri-code-line text-green-400 text-2xl" />
               <span>Prabin.dev</span>
             </a>
           </div>
