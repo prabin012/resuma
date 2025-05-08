@@ -2,7 +2,7 @@ const EducationResearch = () => {
   const education = [
     {
       years: "2020-2024",
-      title: "Jain Deemed to-be University Bengaluru, Indai",
+      title: "Jain Deemed to-be University Bengaluru, India",
       description: "Bachelor's Degree in Computer Science",
     },
     {

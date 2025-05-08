@@ -4,7 +4,7 @@ const LetsConnect = () => {
     {
       icon: "ri-mail-fill",
       label: "Email",
-      value: "prabinmahato415@gmail.com",
+      value: "dev.prabinmahato@gmail.com",
     },
     { icon: "ri-chrome-line", label: "web", value: "prabinmahato.com.np" },
     {

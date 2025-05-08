@@ -11,7 +11,7 @@ const HeroSection = () => {
                 className="rounded-full "
               />
             </div>
-            <div className="absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-1/2 bg-lime-500 text-white p-3 rounded-xl">
+            <div className="absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-1/2 bg-green-500 text-white p-3 rounded-xl">
               <i className="ri-code-s-slash-line text-2xl"></i>
             </div>
           </div>
@@ -23,18 +23,20 @@ const HeroSection = () => {
               <strong className="text-green-500">{`</span>`}</strong>
             </p>
             <h1 className="text-4xl md:text-5xl font-bold leading-tight mb-4">
-              Junior <span className="text-lime-500">{"{Full Stack}"}</span> Web
-              & <br /> App developer
-              <span className="text-lime-500">_</span>
+              Junior <span className="text-green-500">{"{Full Stack}"}</span>{" "}
+              Web & <br /> App developer
+              <span className="text-green-500">_</span>
             </h1>
             <p className="mb-6 text-gray-600 dark:text-gray-300">
-              With expertise in cutting-edge technologies such as
+              <span className="text-green-500">{"<p>"}</span> With expertise in
+              cutting-edge technologies such as
               <span className="font-medium text-black dark:text-white">
                 Full-stack developer experienced in Node.js, React, JavaScript,
                 TypeScript, and MongoDB, building scalable MERN apps with clean
                 UI, API integration, and database management.
               </span>
               <br />I deliver web solutions that are both innovative and robust.
+              <span className="text-green-500">{"</p>"}</span>
             </p>
             <div className="flex md:items-end ">
               <div className="col-span-1 md:w-2/4 flex">
@@ -112,7 +114,7 @@ const HeroSection = () => {
                 download
                 className="inline-flex items-center gap-2  font-semibold "
               >
-                <i className="ri-download-2-line text-xl text-lime-600" />[
+                <i className="ri-download-2-line text-xl text-green-600" />[
                 Download my CV ]
               </a>
             </div>
