@@ -12,6 +12,7 @@ import LetsConnect from "../Hero/Connect";
 import Footer from "../Footer/Footer";
 import WorkedWith from "../Hero/Work";
 import GithubStats from "../Hero/GithubStats";
+import ProjectsSection from "../Hero/Projects/Projects";
 
 const HomeLayout = () => {
   const scrollToElement = (href: string) => {
@@ -48,13 +49,16 @@ const HomeLayout = () => {
       <div id="experience">
         <Experience />
       </div>
-
+      <div>
+        <ProjectsSection />
+      </div>
       <div id="expertise">
         <MySkills />
       </div>
       <div id="">
         <WorkedWith />
       </div>
+
       <div id="portfolio">
         <GithubStats />
       </div>
