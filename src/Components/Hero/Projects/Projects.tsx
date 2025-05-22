@@ -16,7 +16,7 @@ const ProjectsSection: React.FC = () => {
       title: "Restaurant Management System",
       description:
         "A full-stack web application for managing restaurant operations, including menus, orders, user roles, and billing.",
-      image: "https://via.placeholder.com/300x200?text=Restaurant+System",
+      image: "/images/Katiya House (2).png",
       techStack: [
         "React",
         "Node.js",
