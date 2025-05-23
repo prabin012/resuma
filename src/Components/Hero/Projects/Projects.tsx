@@ -32,8 +32,8 @@ const ProjectsSection: React.FC = () => {
       title: "News Application",
       description:
         "A modern news app to display categorized articles fetched from APIs with search and filter functionality.",
-      image: "https://via.placeholder.com/300x200?text=News+Application",
-      techStack: ["React", "TypeScript", "Tailwind", "GraphQL", "MongoDB"],
+      image: "/images/NewsNext.png",
+      techStack: ["React", "TypeScript", "Tailwind", "Node.js", "MongoDB"],
       githubLink: "https://github.com/username/news-application",
       demoLink: "https://newsapp-demo.example.com",
     },
@@ -41,7 +41,7 @@ const ProjectsSection: React.FC = () => {
       title: "Booking System",
       description:
         "A comprehensive property booking platform with search filters, user roles, booking flows, dashboard, and insurance support.",
-      image: "/images/booking.png",
+      image: "/images/ICON_WHITE.png",
       techStack: [
         "React",
         "Tailwind",
