@@ -53,7 +53,7 @@ const ProjectsSection: React.FC = () => {
         "Jira",
       ],
       githubLink: "https://github.com/username/booking-system",
-      demoLink: "https://dev.ghumnepal.com/",
+      demoLink: "https://ghumnepal.com/",
     },
   ];
 
