@@ -26,7 +26,7 @@ const ProjectsSection: React.FC = () => {
         "TypeScript",
       ],
       githubLink: "https://github.com/username/restaurant-management",
-      demoLink: "/working",
+      demoLink: "#",
     },
     {
       title: "News Application",
@@ -35,7 +35,7 @@ const ProjectsSection: React.FC = () => {
       image: "/images/NewsNext.png",
       techStack: ["React", "TypeScript", "Tailwind", "Node.js", "MongoDB"],
       githubLink: "https://github.com/username/news-application",
-      demoLink: "/working",
+      demoLink: "#",
     },
     {
       title: "Booking System",
