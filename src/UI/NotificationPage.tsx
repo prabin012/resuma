@@ -3,7 +3,7 @@ import { FaRocket } from "react-icons/fa";
 
 const NotificationPage = () => {
   return (
-    <div className="flex items-center justify-center min-h-screen bg-[#1f1f28] px-4">
+    <div className="flex items-center justify-center  bg-[#1f1f28] px-4">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
